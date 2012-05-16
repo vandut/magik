@@ -73,8 +73,8 @@ public class GeneratePDF {
 	}
 	
 	private void drawCutLines() {
-		for(int x = 0; x < MARGIN_W; x++) {
-			for(int y = 0; y < MARGIN_H; y++) {
+		for(int x = 0; x <= MAX_X; x++) {
+			for(int y = 0; y <= MAX_Y; y++) {
 				drawOuterCutLines(MARGIN_W+x*CARD_W, MARGIN_H+y*CARD_H);
 			}
 		}
