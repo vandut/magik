@@ -33,6 +33,7 @@ public class Downloader {
 			Edition e = new Edition();
 			e.setId(row.getElementsByTag("small").text());
 			e.setName(row.getElementsByTag("a").text());
+            System.out.println(String.format("Name: %s, id: %s", e.getName(), e.getId()));
 			editionList.add(e);
 		}
 		return editionList;
